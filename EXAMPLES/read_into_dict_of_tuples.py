@@ -6,7 +6,7 @@ knight_info = {}  # <1>
 
 with open("../DATA/knights.txt") as knights_in:
     for line in knights_in:
-        (name, title, color, quest, comment) = line.rstrip('\n\r').split(":")
+        name, title, color, quest, comment = line.rstrip('\n\r').split(":")
         knight_info[name] = title, color, quest, comment  # <2>
 
 pprint(knight_info)
@@ -17,3 +17,4 @@ for name, info in knight_info.items():
 
 print()
 print(knight_info['Robin'][2])
+print(knight_info['Bedevere'][-1])

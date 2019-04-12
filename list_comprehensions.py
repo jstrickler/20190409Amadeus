@@ -81,4 +81,5 @@ print(any(bools))
 print(all(bools))
 
 
-
+clean_fruits = [..... fruits]
+print(clean_fruits)
