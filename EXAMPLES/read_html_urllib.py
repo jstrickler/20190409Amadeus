@@ -2,9 +2,9 @@
 
 import urllib.request
 
-u = urllib.request.urlopen("https://www.python.org")
+u = urllib.request.urlopen("https://amadeus.com")
 
 print(u.info())  # <1>
 print()
 
-print(u.read(500).decode())   # <2>
+print(u.read(5000).decode())   # <2>
